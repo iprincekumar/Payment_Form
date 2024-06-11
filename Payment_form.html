@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1 style="text-align: center; text-shadow: 2px 2px 2px rgb(23, 3, 3);">Payment Form</h1>
+            <p style="text-align: center;">Required fields are allowed by *</p>
+            <h2>Contact Information</h2>
+            <p>Name: * <input type="text" name="name" required style="width:100%; height:30px;"></p>
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <p>
+                    Male <input type="radio" name="gender" id="male" required> Female <input type="radio" name="gender" id="female" required>
+                    </p>
+                </fieldset>     
+            <p>Address: <textarea name="address" cols="80" rows="3"></textarea></p>
+                <p>Email: <input type="email" name="email" id="email" style="width:100%; height:30px;"></p>
+                <p>Pincode: <input type="number" name="pincode" id="pincode" style="width:100%; height:30px;"></p>
+                <hr>
+                <h2>Payment Details</h2>
+                <p>Card Type:
+                    <select name="card type" id="card type" style="width:100%; height:30px;">
+                        <option value="">--Select a card type--</option>
+                        <option value="visa"> Visa Card</option>
+                        <option value="master card"> Master Card</option>
+                        <option value="aluminium card"> Aluminium Card</option>
+                        <option value="rupay  card"> Rupay Card</option>
+                    </select>
+                </p>
+                <p>
+                    Card Number * <input type="number" name="card_number" id="card_number" required style="width:100%; height:30px;">
+                </p>
+                <p>
+                    Expiry Date: <input type="month" id="exp_year" required style="width:100%; height:30px;">
+                </p>
+                <p>
+                    CVV <input type="password" name="cvv" id="cvv" required style="width:10%; height:30px;">
+                </p>
+                <input type="submit" value="Pay Now" style="text-align: center;">
+        
+        </form>
+    </div>
+</body>
+</html>
